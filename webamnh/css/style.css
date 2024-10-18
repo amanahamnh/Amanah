@@ -1,0 +1,228 @@
+/* Mengatur box-sizing untuk memastikan padding dan border dihitung dalam ukuran elemen */
+* {
+    box-sizing: border-box;
+}
+
+/* Font dan background dengan warna gradient yang lebih lembut */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #333;
+}
+
+/* Mengatur layout flexbox agar kotak login berada di tengah layar */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Kotak login dengan bentuk melengkung, bayangan, dan efek interaktif */
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.login-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Desain judul form login */
+.login-box h2 {
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+/* Desain input dan select dengan border halus, sudut melengkung, dan efek fokus */
+input, select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.3);
+}
+
+/* Tombol submit dengan transisi halus dan sudut membulat */
+input[type=submit] {
+    background-color: #6a11cb;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: #2575fc;
+}
+
+/* Desain header dengan padding lebih besar dan font lebih menonjol */
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 30px;
+    font-size: 26px;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Menu samping dengan warna yang lebih elegan dan padding yang lebih besar */
+aside {
+    flex: 20%;
+    background: #333;
+    padding: 30px;
+    min-height: 100vh;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+/* Konten utama dengan padding dan background lebih terang */
+section.main {
+    flex: 80%;
+    background: #f9f9f9;
+    padding: 40px;
+    min-height: 530px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Desain footer dengan warna abu-abu lembut dan padding lebih besar */
+footer {
+    background: #f1f1f1;
+    color: #555;
+    padding: 30px;
+    text-align: center;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+/* Desain menu dengan border halus dan efek hover */
+.menu {
+    padding: 0;
+}
+
+.menu li {
+    border-bottom: 1px solid #444;
+    margin-bottom: 10px;
+}
+
+.menu a {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.menu a:hover {
+    background: #444;
+    transform: translateX(10px);
+}
+
+/* Tabel dengan border halus dan penataan lebih modern */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    border: 1px solid #eee;
+    padding: 20px;
+    text-align: left;
+}
+
+.table th {
+    background: #6a11cb;
+    color: #fff;
+}
+
+/* Desain tombol lebih modern dengan bayangan */
+.tombol {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    background: #038ade;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tombol:hover {
+    background: #025fa1;
+    transform: translateY(-5px);
+}
+
+/* Tombol edit dan hapus dengan ukuran lebih kecil */
+.tombol.edit, .tombol.hapus {
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.tombol.hapus {
+    background: #fc4c4c;
+}
+
+/* Desain form dengan label dan input yang lebih rapi */
+.form-group {
+    clear: both;
+}
+
+.form-group label {
+    display: block;
+    padding: 10px 0;
+    font-weight: bold;
+    width: 30%;
+}
+
+.form-group .input {
+    width: 65%;
+}
+
+/* Tampilan radio button yang lebih rapi */
+input[type=radio] {
+    width: auto;
+}
+
+/* Tombol submit dan reset dengan desain lebih menarik */
+.tombol.simpan {
+    background: #038ade;
+}
+
+.tombol.reset {
+    background: #fb8307;
+}
+
+/* Tampilan form di layar kecil dengan label dan input yang sejajar */
+@media (max-width: 700px) {
+    .form-group label, .form-group .input {
+        width: 100%;
+    }
+}

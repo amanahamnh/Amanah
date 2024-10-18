@@ -1,0 +1,80 @@
+/* Mengatur font dan margin */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header dengan background gradient, sudut melengkung, dan bayangan */
+header {
+    background: linear-gradient(135deg, #280872, #6a11cb);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigasi dengan elemen melengkung dan transisi */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+}
+
+/* Menambahkan animasi garis bawah */
+header nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: width 0.3s;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Seksi konten dengan kotak melengkung dan bayangan */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+    max-width: 1000px;
+    margin: 50px auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Desain container dengan margin tengah */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px;
+}
